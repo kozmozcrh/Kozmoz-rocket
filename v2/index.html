@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Kozmoz Rocket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="gameWrap">
+    <canvas id="gameCanvas"></canvas>
 
+    <div id="menu" class="panel">
+      <h1>🚀 Kozmoz Rocket</h1>
+      <p>Meteorlardan kaç, yıldızları topla, en yüksek skoru yap!</p>
+      <button id="startBtn">Oyuna Başla</button>
+      <button id="howBtn">Nasıl Oynanır?</button>
+      <small>Telefon: ekrana basılı tut • PC: Space / Mouse</small>
+    </div>
+
+    <div id="how" class="panel hidden">
+      <h2>Nasıl Oynanır?</h2>
+      <p>Roketi yükseltmek için ekrana basılı tut. Bırakınca roket aşağı iner.</p>
+      <p>Meteor çarparsa oyun biter. Yıldız toplarsan ekstra puan kazanırsın.</p>
+      <button id="backBtn">Geri</button>
+    </div>
+
+    <div id="gameOver" class="panel hidden">
+      <h2>Oyun Bitti</h2>
+      <p id="finalScore">Skor: 0</p>
+      <p id="bestScore">En iyi: 0</p>
+      <button id="restartBtn">Tekrar Oyna</button>
+      <button id="menuBtn">Ana Menü</button>
+    </div>
+
+    <div id="hud" class="hidden">
+      <span id="scoreText">Skor: 0</span>
+      <span id="bestText">En iyi: 0</span>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
